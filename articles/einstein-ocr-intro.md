@@ -28,27 +28,37 @@ REST API エンドポイントからモデルにアクセスできるため、�
 
 # 何ができるの？
 
-いまのところ、2 つのモデルが用意されています。
+いまのところ 2 つのモデルが用意されています。
 
 1. OCRModel
-   - Text : 画像の中で比較的無秩序に並らべられている文字列を読み取るとき
+   - Text : 画像の中で比較的無秩序に並べられている文字列を読み取るとき
    - Contact : 名刺のような一定のルールで並らべられている文字列を読み取るとき
 2. tabulatev2
    - Table : 縦横の表形式で並んでいる文字列を読み取るとき
 
 :::message
-それぞれのモデルのアクセス方法は、[こちら](https://metamind.readme.io/docs/what-is-einstein-ocr) のガイドに記載されています。
+それぞれのモデルのアクセス方法は、[こちら](https://metamind.readme.io/docs/what-is-einstein-ocr) のガイドに記載されています ✨
 :::
 
 :::message alert
 本エントリを執筆している 2020 年 10 月 17 日時点では、日本語の読み取りについて正式にはサポートされていません。今後のアップデートを注視していきましょう 👀
 :::
 
+あとはアイディア次第でいろいろなことができると思います。
+Salesforce にデータをためる時に、これまではパソコンのキーボードを叩いて入力していました。あるいは、メールの文面を取り込んで入力するような機能[^1]もありました。
+[^1]: **メール-to-ケース** です。詳細は[こちら](https://trailhead.salesforce.com/ja/content/learn/modules/service_basics/service_basics_create_customer_channels)
+
+今度は、画像のアップロードで入力できるとしたら、、、と考えることになります。
+しかも、不正確なデータが入力されることも事前に想定しておく必要がありますよね。
+何か思いついたらぜひ教えてください。私もそのうち作って公開します 😎
+
 # どうやったら試せるの？
+
+上述のガイドには、Einstein Platform Services の Vision API をコマンドラインから試す方法が記載されていました。
+今回は Salesforce Platform 上のアプリ **Einstein Playground** から試す方法を紹介します。
 
 ## 事前準備
 
-Einstein Platform Services の Vision API をコールするために、まずは事前準備をします。
 半年前くらいに主催したワークショップにて手順をまとめてありますので、[こちら](https://github.com/takahitomiyamoto/einstein-platform-services-basic/wiki/Prerequisite) を完了させてください。
 Salesforce の画面に Einstein Playground アプリが表示できていれば OK です。
 

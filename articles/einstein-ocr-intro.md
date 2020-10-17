@@ -59,14 +59,31 @@ Salesforce にデータをためる時に、これまではパソコンのキー
 
 ## 事前準備
 
-半年前くらいに主催したワークショップにて手順をまとめてありますので、[こちら](https://github.com/takahitomiyamoto/einstein-platform-services-basic/wiki/Prerequisite) を完了させてください。
+半年前くらいに主催したワークショップにて手順をまとめてありましたので今回も流用します。
+まずは [こちら](https://github.com/takahitomiyamoto/einstein-platform-services-basic/wiki/Prerequisite) を完了させてください。
 Salesforce の画面に Einstein Playground アプリが表示できていれば OK です。
 
 ![Einstein Playground - OCR](https://raw.githubusercontent.com/takahitomiyamoto/zenn-art-einstein-ocr/main/articles/einstein-playground-ocr.png)
 
-次に、読み取りたい画像を何枚か用意します。今回は、「名刺」と「手書きの表」の画像にしてみます。
+読み取りたい画像を何枚か用意します。今回は、「PC に貼ったステッカー」と「名刺」と「手書きの表」の画像でやってみます。
 
-API を実行
+### Text
+
+小さいフクロウ (Hootie) の胸に書かれている小さい文字も正確に読み取っていました。やはり英数字には強いですね。
+
+![Text](https://raw.githubusercontent.com/takahitomiyamoto/zenn-art-einstein-ocr/main/articles/einstein-playground-ocr-text.png)
+
+### Contact
+
+けっこう正確に認識できていますね。1 つの文字列だけどそれが改行されてる場合は別々のデータとして認識されています。やはり日本語は変な英数字として認識されてました。
+
+![Contact](https://raw.githubusercontent.com/takahitomiyamoto/zenn-art-einstein-ocr/main/articles/einstein-playground-ocr-contact.png)
+
+### Table
+
+何行目の何列目かも認識できていますね。もちろん日本語は変な英数字として認識されてました。
+
+![Table](https://raw.githubusercontent.com/takahitomiyamoto/zenn-art-einstein-ocr/main/articles/einstein-playground-ocr-table.png)
 
 # さいごに
 
@@ -74,11 +91,15 @@ API を実行
 このほかにも Salesforce 公式の学習教材がたくさんありますので、ぜひ触ってみてください 💪🏽
 
 :::message
-おすすめのコンテンツは [こちら](https://trailhead.salesforce.com/ja/users/takahito0508/trailmixes/road-to-einstein-champion) にまとめまています。
+おすすめの Einstein コンテンツは [こちら](https://trailhead.salesforce.com/ja/users/takahito0508/trailmixes/road-to-einstein-champion) にまとめてあります。
 :::
+
+それではまたお会いしましょう。どうぞお元気で。
 
 # おまけ
 
 定期的に開催している土曜日のもくもく会で一緒に勉強しませんか？
-一人で進めるもよし、私たちメンターに質問するもよし。お待ちしてますー
+一人で進めるもよし、私たちメンターに質問するもよし。本エントリのフィードバックもお待ちしております。
+お気軽にご参加ください 🌈
+
 @[tweet](https://twitter.com/takahito0508/status/1315938589826379776)

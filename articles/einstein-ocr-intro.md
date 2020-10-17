@@ -71,7 +71,7 @@ Salesforce の画面に Einstein Playground アプリが表示できていれば
 
 小さいフクロウ (Hootie) の胸に書かれている小さい文字も正確に読み取っていました。やはり英数字には強いですね。
 
-![Text](https://raw.githubusercontent.com/takahitomiyamoto/zenn-art-einstein-ocr/main/articles/einstein-playground-ocr-text.png)
+![Text](https://raw.githubusercontent.com/takahitomiyamoto/zenn-art-einstein-ocr/main/articles/einstein-playground-ocr-sticker.png)
 
 ### Contact
 

@@ -12,7 +12,20 @@ published: false
 
 今回は、2020 年 5 月に GA (正式リリース) となった、[Einstein OCR](https://releasenotes.docs.salesforce.com/ja-jp/summer20/release-notes/rn_einstein_vision_ocr_ga.htm) について紹介します。
 
-> OCR = Optical Character Recognition (光学文字認識)
+## OCR とは
+
+**O**ptical **C**haracter **R**ecognition、日本語では **光学式文字認識** と呼ばれています。
+
+## Einstein OCR とは
+
+画像中の英数字テキストを検出する OCR モデルを提供しています。
+各モデルには、名刺のスキャン、商品の検索、ドキュメントとテーブルのデジタル化など、特定の使用事例があります。
+
+> [Einstein OCR を使用した画像内のテキストの検出 (正式リリース)](https://releasenotes.docs.salesforce.com/ja-jp/summer20/release-notes/rn_einstein_vision_ocr_ga.htm)
+
+REST API エンドポイントからモデルにアクセスできるため、呼び出し元が必ずしも Salesforce Platform 上のアプリである必要はありません。
+
+# 何ができるの？
 
 :::message
 [こちら](https://metamind.readme.io/docs/what-is-einstein-ocr) のガイドに沿って解説していきます。
@@ -21,8 +34,6 @@ published: false
 :::message alert
 本エントリを執筆している 2020 年 10 月 xx 日時点では、日本語の読み取りについて正式にはサポートされていません。今後のアップデートを注視していきましょう 👀
 :::
-
-# 何ができるの？
 
 # どうやったら試せるの？
 

@@ -48,8 +48,7 @@ REST API エンドポイントからモデルにアクセスできるため、�
 Salesforce にデータをためる時に、これまではパソコンのキーボードを叩いて入力していました。あるいは、メールの文面を取り込んで入力するような機能[^1]もありました。
 [^1]: **メール-to-ケース** です。詳細は[こちら](https://trailhead.salesforce.com/ja/content/learn/modules/service_basics/service_basics_create_customer_channels)
 
-今度は、画像のアップロードで入力できるとしたら、、、と考えることになります。
-しかも、不正確なデータが入力されることも事前に想定しておく必要がありますよね。
+今度は、画像のアップロードで入力できるとしたら、、、と考えることになります。しかも、不正確なデータが入力されることも事前に想定しておく必要がありますよね。
 何か思いついたらぜひ教えてください。私もそのうち作って公開します 😎
 
 # どうやったら試せるの？
@@ -60,12 +59,18 @@ Salesforce にデータをためる時に、これまではパソコンのキー
 ## 事前準備
 
 半年前くらいに主催したワークショップにて手順をまとめてありましたので今回も流用します。
-まずは [こちら](https://github.com/takahitomiyamoto/einstein-platform-services-basic/wiki/Prerequisite) を完了させてください。
+[こちら](https://github.com/takahitomiyamoto/einstein-platform-services-basic/wiki/Prerequisite) を完了させてください。
+
 Salesforce の画面に Einstein Playground アプリが表示できていれば OK です。
 
 ![Einstein Playground - OCR](https://raw.githubusercontent.com/takahitomiyamoto/zenn-art-einstein-ocr/main/articles/einstein-playground-ocr.png)
 
+この事前準備を完了させることがいちばんのハードルだと思います。もし自力でできない場合は、後述の勉強会でサポートできますよ 😉
+
+## 実行
+
 読み取りたい画像を何枚か用意します。今回は、「PC に貼ったステッカー」と「名刺」と「手書きの表」の画像でやってみます。
+使うモデルを選択して、画像をアップロードしてください。自動的に API が呼ばれ、結果が表示されます。
 
 ### Text
 
@@ -81,9 +86,14 @@ Salesforce の画面に Einstein Playground アプリが表示できていれば
 
 ### Table
 
-何行目の何列目かも認識できていますね。もちろん日本語は変な英数字として認識されてました。
+手書きの表なのに、何行目の何列目のデータなのかも認識できているのはすごいですね。もちろん日本語は変な英数字として認識されてました。
 
 ![Table](https://raw.githubusercontent.com/takahitomiyamoto/zenn-art-einstein-ocr/main/articles/einstein-playground-ocr-table.png)
+
+あっという間に試せてしまいました。コマンドラインで試すよりも直感的にできたと思います。
+これらの解析結果のデータは JSON 構造で取得できていますので、次のビジネスロジックへデータを渡すことが容易です。
+
+...何かいいアイディア浮かびましたか？ 🤔
 
 # さいごに
 

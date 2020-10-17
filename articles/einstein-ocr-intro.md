@@ -69,7 +69,9 @@ Salesforce の画面に Einstein Playground アプリが表示できていれば
 
 ![Einstein Playground - OCR](https://raw.githubusercontent.com/takahitomiyamoto/zenn-art-einstein-ocr/main/articles/einstein-playground-ocr.png)
 
+:::message
 この事前準備を完了させることがいちばんのハードルだと思います。もし自力でできない場合は、後述の勉強会でサポートできますよ 😉
+:::
 
 ## 実行
 

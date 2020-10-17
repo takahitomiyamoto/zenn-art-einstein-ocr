@@ -9,17 +9,18 @@ published: false
 # はじめに
 
 こんにちは。2019 年より [Salesforce Einstein Champion](https://www.salesforce.com/campaign/einstein-champions/trailblazers/#!page=1&sort=alphaSort&tags=architect_technical) をやらしてもらってる Heat です。
+Salesforce 歴は 7 年目くらいです。
 
 今回は、2020 年 5 月に GA (正式リリース) となった、[Einstein OCR](https://releasenotes.docs.salesforce.com/ja-jp/summer20/release-notes/rn_einstein_vision_ocr_ga.htm) について紹介します。
 
 ## OCR とは
 
 **O**ptical **C**haracter **R**ecognition、日本語では **光学式文字認識** と呼ばれています。
+たとえば紙の申込書をスキャンして、そこに記載されている文字をデータ化してくれるような技術です。
 
 ## Einstein OCR とは
 
-画像中の英数字テキストを検出する OCR モデルを提供しています。
-各モデルには、名刺のスキャン、商品の検索、ドキュメントとテーブルのデジタル化など、特定の使用事例があります。
+Salesforce が提供する、画像中の英数字テキストを検出する OCR モデルです。
 
 > [Einstein OCR を使用した画像内のテキストの検出 (正式リリース)](https://releasenotes.docs.salesforce.com/ja-jp/summer20/release-notes/rn_einstein_vision_ocr_ga.htm)
 
@@ -27,12 +28,20 @@ REST API エンドポイントからモデルにアクセスできるため、�
 
 # 何ができるの？
 
+いまのところ、2 つのモデルが用意されています。
+
+1. OCRModel
+   - Text : 画像の中で比較的無秩序に並らべられている文字列を読み取るとき
+   - Contact : 名刺のような一定のルールで並らべられている文字列を読み取るとき
+2. tabulatev2
+   - Table : 縦横の表形式で並んでいる文字列を読み取るとき
+
 :::message
-[こちら](https://metamind.readme.io/docs/what-is-einstein-ocr) のガイドに沿って解説していきます。
+それぞれのモデルのアクセス方法は、[こちら](https://metamind.readme.io/docs/what-is-einstein-ocr) のガイドに記載されています。
 :::
 
 :::message alert
-本エントリを執筆している 2020 年 10 月 xx 日時点では、日本語の読み取りについて正式にはサポートされていません。今後のアップデートを注視していきましょう 👀
+本エントリを執筆している 2020 年 10 月 17 日時点では、日本語の読み取りについて正式にはサポートされていません。今後のアップデートを注視していきましょう 👀
 :::
 
 # どうやったら試せるの？

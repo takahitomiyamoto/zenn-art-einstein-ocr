@@ -2,7 +2,7 @@
 title: 'Einstein OCR を試してみよう'
 emoji: '🔎'
 type: 'tech' # tech: 技術記事 / idea: アイデア
-topics: ['ai', 'salesforce', 'einstein']
+topics: ['ai', 'salesforce', 'einstein', 'ocr']
 published: false
 ---
 

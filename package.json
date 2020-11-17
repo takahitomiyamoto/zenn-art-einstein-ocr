@@ -1,5 +1,5 @@
 {
-  "name": "zenn-art-einstein-ocr",
+  "name": "zenn-docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/takahitomiyamoto/zenn-art-einstein-ocr.git"
+    "url": "git+https://github.com/takahitomiyamoto/zenn-docs.git"
   },
   "keywords": [],
   "author": "Takahito Miyamoto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/takahitomiyamoto/zenn-art-einstein-ocr/issues"
+    "url": "https://github.com/takahitomiyamoto/zenn-docs/issues"
   },
-  "homepage": "https://github.com/takahitomiyamoto/zenn-art-einstein-ocr#readme",
+  "homepage": "https://github.com/takahitomiyamoto/zenn-docs#readme",
   "devDependencies": {
     "prettier": "2.1.2",
-    "zenn-cli": "0.1.49"
+    "zenn-cli": "0.1.57"
   }
 }

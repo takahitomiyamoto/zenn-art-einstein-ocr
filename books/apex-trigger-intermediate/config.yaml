@@ -1,0 +1,15 @@
+title: 'Apex トリガ 中級'
+summary: 'Apex トリガの中級レベルのチュートリアルです。テストがしやすくて、将来の変更に強い、一歩進んだ Apex 開発手法をいっしょに学びましょう。'
+topics: [
+    'salesforce',
+    'apex',
+    'apex-trigger-framework',
+    'dependency-injection',
+    'inversion-of-control',
+  ] # トピック（5つまで）
+published: false # falseだと下書き
+price: 0 # 有料の場合200〜5000
+chapters:
+  - example1 # チャプター1
+  - example2 # チャプター2
+  - example3 # チャプター3

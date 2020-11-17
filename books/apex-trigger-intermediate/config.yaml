@@ -8,7 +8,7 @@ topics: [
     'inversion-of-control',
   ] # トピック（5つまで）
 published: false # falseだと下書き
-price: 0 # 有料の場合200〜5000
+price: 200 # 有料の場合200〜5000
 chapters:
   - example1 # チャプター1
   - example2 # チャプター2

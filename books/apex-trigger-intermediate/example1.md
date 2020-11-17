@@ -1,3 +1,6 @@
-# Example 1
+---
+title: 'Example 1'
+free: true
+---
 
-xxx
+ここからチャプター本文
